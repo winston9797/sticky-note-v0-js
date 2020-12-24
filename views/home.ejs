@@ -1,0 +1,16 @@
+<%- include('partials/_header') %>
+<div class="notes-container">
+    <% notes.forEach(note =>{ %>
+        <div class="note-default" method='POST'>
+            <a class="note-link-edit" href="/edit/<%- note.id %>">Edit</a>
+            <a class="note-link-delete" href="/delete/<%- note.id %>">Delete</a>
+            <%- note.note %>
+        </div>
+    <% }) %>
+</div>
+<%- include('partials/_footer') %>
+
+
+    
+        
+

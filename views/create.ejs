@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=², initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Sticky Notes V0</title>
+</head>
+<body>
+    <nav class="tool-bar">
+        <a href="/">Sticky Notes V 0.0</a>
+        <a href="/create">Create Note</a>
+    </nav>
+    <div class="notes-container">
+        <%-message%>
+        <form method="POST" action="/new">
+            <textarea name="noteContent" id="" cols="100%" rows="20"></textarea>
+            <input type="submit" value="Create Note" name="" id="">
+        </form>
+    </div>
+</body>
+</html>
